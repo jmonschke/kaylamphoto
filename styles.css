@@ -74,7 +74,7 @@ nav {
 
 @media (max-width: 992px) {
     nav,
-    header .logo {
+    header ˚∫.logo {
         float: none;
     }
 
@@ -116,6 +116,10 @@ nav {
     padding: 375px 0;
     color: #fff;
     text-transform: uppercase;d
+}
+
+.hero.about {
+    background-image: url(./images/about.jpg);
 }
 
 .hero h1 {
