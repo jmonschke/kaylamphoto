@@ -2,7 +2,217 @@
 <html>
 <head>
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Roboto+Slab:100,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="styles.css" />
+    <style>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: Roboto, helvetica, arial, sans-serif, sans;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+header {
+    height: 76px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    background: #fff;
+    text-transform: uppercase;
+    padding: 27px;
+    font-weight: 100;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:visited,
+nav a:active,
+nav a {
+    color: #626262;
+    text-decoration: none;
+    padding: 3px 15px;
+    display: inline-block;
+}
+
+nav {
+    float: right;
+}
+
+.logo {
+    font-size: 22px;
+    float: left;
+}
+
+@media (max-width: 992px) {
+    nav,
+    header ˚∫.logo {
+        float: none;
+    }
+
+    nav {
+        padding: 15px 0;
+    }
+
+    header {
+        height: 105px;
+    }
+}
+
+@media (max-width: 610px) {
+    header {
+        height: 125px;
+    }
+
+}
+
+@media (max-width: 407px) {
+    header {
+        height: 155px;
+    }
+
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+.hero {
+    background-image: url(./images/home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 760px;
+    text-align: center;
+    padding: 375px 0;
+    color: #fff;
+    text-transform: uppercase;d
+}
+
+.hero.about-hero {
+    background-image: url(./images/about.jpg);
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.content {
+    max-width: 980px;
+    width: 100%;
+    background: #fff;
+    margin: auto;
+}
+
+.content .img-responsive {
+    max-width: 100%;
+}
+
+.content .image {
+    width: 75.306122%;
+}
+
+.content .text {
+    font-size: 4vmin;
+    margin: 21% 0;
+    text-align: center;
+    width: 24.693878%;
+}
+
+.content .text a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.content section {
+    clear: both;
+}
+
+.content.about {
+    font-size: 16px;
+    padding: 15px;
+    line-height: 2em;
+}
+
+.about ul {
+    margin: 0 30px 30px;
+}
+
+.about li {
+    margin-left: 15px;
+}
+
+.about h2 {
+    font-size: 28px;
+    margin: 30px 0 15px;
+}
+
+.about h3 {
+    margin: 30px 0 15px;
+    font-size: 24px;
+}
+
+.content .left {
+    float: left;
+}
+
+.content .right {
+    float: right;
+}
+
+footer .logo {
+    margin: 45px 0;
+    font-weight: 100;
+    border: solid #DDD;
+    background: #EEE;
+    text-transform: uppercase;
+    border-width: 1px 0;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+}
+    </style>
     <title>About | Kayla Monschke Photography</title>
 </head>
 <body>
@@ -17,7 +227,7 @@
             <a href="/about">About</a>
         </nav>
     </header>
-    <section class="hero about">
+    <section class="hero about-hero">
         <h1><span class="name">Kayla Monschke</span> Photography</h1>
         <p>Babies | Kids | Families | Maternity | Seniors</p>
     </section>
