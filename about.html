@@ -1,259 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Roboto+Slab:100,400,700' rel='stylesheet' type='text/css'>
-    <style>
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    box-sizing: border-box;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-    font-family: Roboto, helvetica, arial, sans-serif, sans;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-header {
-    height: 76px;
-    width: 100%;
-    border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc;
-    background: #fff;
-    text-transform: uppercase;
-    padding: 27px;
-    font-weight: 100;
-}
-
-nav a:hover,
-nav a:focus,
-nav a:visited,
-nav a:active,
-nav a {
-    color: #626262;
-    text-decoration: none;
-    padding: 3px 15px;
-    display: inline-block;
-}
-
-nav {
-    float: right;
-}
-
-.logo {
-    font-size: 22px;
-    float: left;
-}
-
-@media (max-width: 992px) {
-    nav,
-    header ˚∫.logo {
-        float: none;
-    }
-
-    nav {
-        padding: 15px 0;
-    }
-
-    header {
-        height: 105px;
-    }
-}
-
-@media (max-width: 610px) {
-    header {
-        height: 125px;
-    }
-
-}
-
-@media (max-width: 407px) {
-    header {
-        height: 155px;
-    }
-
-}
-
-.logo a {
-    text-decoration: none;
-    color: #000;
-}
-
-.hero {
-    background-image: url(./images/home.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 760px;
-    text-align: center;
-    padding: 375px 0;
-    color: #fff;
-    text-transform: uppercase;d
-}
-
-.hero.about-hero {
-    background-image: url(./images/about.jpg);
-}
-
-.hero h1 {
-    font-size: 45px;
-    margin-bottom: 20px;
-    font-weight: 100;
-}
-
-.name {
-    font-weight: 700;
-}
-
-.content {
-    max-width: 980px;
-    width: 100%;
-    background: #fff;
-    margin: auto;
-}
-
-.content .img-responsive {
-    max-width: 100%;
-}
-
-.content .image {
-    width: 75.306122%;
-}
-
-.content .text {
-    font-size: 4vmin;
-    margin: 21% 0;
-    text-align: center;
-    width: 24.693878%;
-}
-
-.content .text a {
-    color: black;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.content section {
-    clear: both;
-}
-
-.content.about {
-    font-size: 16px;
-    padding: 15px;
-    line-height: 2em;
-}
-
-.about ul {
-    margin: 0 30px 30px;
-}
-
-.about li {
-    margin-left: 15px;
-}
-
-.about h2 {
-    font-size: 28px;
-    margin: 30px 0 15px;
-}
-
-.about h3 {
-    margin: 30px 0 15px;
-    font-size: 24px;
-}
-
-.content .left {
-    float: left;
-}
-
-.content .right {
-    float: right;
-}
-
-footer .logo {
-    margin: 45px 0;
-    font-weight: 100;
-    border: solid #DDD;
-    background: #EEE;
-    text-transform: uppercase;
-    border-width: 1px 0;
-    padding: 30px;
-    width: 100%;
-    text-align: center;
-}
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Kayla Monschke, professional photographer specializing in babies, kids, families, maternity, and senior portraits">
+    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
     <title>About | Kayla Monschke Photography</title>
 </head>
 <body>
-    <img src="/images/about.jpg" style="display:none;" />
-    <header>
-        <div class="logo"><a href="/"><span class="name">Kayla Monschke</span> Photography</a></div>
-        <nav>
-            <a href="#babies">Babies</a>
-            <a href="#kids">Kids</a>
-            <a href="#families">Families</a>
-            <a href="#maternity">Maternity</a>
-            <a href="#seniors">Seniors</a>
-            <a href="/about">About</a>
-        </nav>
-    </header>
-    <section class="hero about-hero">
-        <h1><span class="name">Kayla Monschke</span> Photography</h1>
-        <p>Babies | Kids | Families | Maternity | Seniors</p>
-    </section>
-    <section class="content about">
-        <h2>About Kayla</h2>
-        <p>Kayla discovered her love of photography in the darkroom of her Film Photography class in college. Times have changed, but her love of photography stays the same. To book a session, contact Kayla by email at kayla.monschke@gmail.com.</p>
-        <h3>Pricing:</h3>
-        <ul>
-            <li>For $150, you get a photography session with Kayla and a CD with all the images</li>
-            <li>Book your session by April 15, 2017, and receive 50% off.</li>
-            <li>Session fee and CD for only $75.</li>
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-toggle" aria-label="Toggle navigation menu">☰</button>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="logo">
+            <h1><span class="name">Kayla Monschke</span> Photography</h1>
+            <p class="tagline">Capturing Life's Moments</p>
+        </div>
+        
+        <ul class="nav-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/#portfolio">Portfolio</a></li>
+            <li><a href="/about.html" class="active">About</a></li>
+            <li><a href="/#pricing">Pricing</a></li>
+            <li><a href="/#contact">Contact</a></li>
         </ul>
-    </section>
-    <footer>
-        <div class="logo">&copy; 2017 <span class="name">Kayla Monschke</span> Photography</div>
+        
+        <div class="contact-info">
+            <p>Let's create something beautiful together</p>
+            <a href="mailto:kayla.monschke@gmail.com">kayla.monschke@gmail.com</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-image" style="background-image: url('./images/about.jpg')"></div>
+            <div class="hero-content">
+                <h1><span class="name">About Kayla</span></h1>
+                <p>Professional Portrait Photographer</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <div class="about-content">
+                <h2>My Story</h2>
+                <p>Kayla discovered her love of photography in the darkroom of her Film Photography class in college. Times have changed, but her love of photography stays the same.</p>
+                
+                <p>What started as a passion for capturing light and shadow on film has evolved into a deep understanding of how to tell stories through images. Kayla believes that every person has a unique story to tell, and her mission is to capture those authentic moments that make each individual special.</p>
+                
+                <p>With years of experience in portrait photography, Kayla specializes in creating timeless images that families will treasure for generations. Her approach is relaxed and natural, allowing genuine emotions to shine through in every photograph.</p>
+                
+                <p>When she's not behind the camera, Kayla can be found exploring new locations, studying the work of master photographers, or spending time with her own family - the people who inspire her most.</p>
+            </div>
+            <div class="about-image" style="background-image: url('./images/about.jpg')"></div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing">
+            <h2>Session Packages</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Portrait Session</h3>
+                    <div class="price">$150</div>
+                    <ul>
+                        <li>1-2 hour photography session with Kayla</li>
+                        <li>High-resolution digital images via download</li>
+                        <li>Online gallery for easy sharing and viewing</li>
+                        <li>Print release included</li>
+                        <li>Professional editing and retouching</li>
+                    </ul>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>What's Included</h3>
+                    <div class="price">—</div>
+                    <ul>
+                        <li>Professional consultation</li>
+                        <li>Location scouting assistance</li>
+                        <li>Wardrobe styling tips</li>
+                        <li>High-resolution digital files via download</li>
+                        <li>Print-ready images in multiple formats</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="about" style="background: var(--dark-bg);">
+            <div class="about-content">
+                <h2>Let's Connect</h2>
+                <p>Ready to create beautiful memories together? I'd love to hear about your vision and help bring it to life through photography.</p>
+                
+                <p>Whether you're celebrating a new addition to the family, capturing your child's senior year, or simply want to document this moment in time, I'm here to make the process enjoyable and the results stunning.</p>
+                
+                <p>Contact me today to discuss your photography needs and book your session.</p>
+                
+                <div style="margin-top: 3rem;">
+                    <a href="mailto:kayla.monschke@gmail.com" style="display: inline-block; padding: 1rem 2rem; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; text-transform: uppercase; letter-spacing: 2px; transition: var(--transition);">Get In Touch</a>
+                </div>
+            </div>
+            <div class="about-image" style="background-image: url('./images/families.jpg')"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; <span id="current-year">2024</span> <span class="name">Kayla Monschke</span> Photography. All rights reserved.</p>
     </footer>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRFZE3DXB0"></script>
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YRFZE3DXB0');
+    </script>
 
-      ga('create', 'UA-67479906-1', 'auto');
-      ga('send', 'pageview');
-
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const sidebar = document.querySelector('.sidebar');
+            const mainContent = document.querySelector('.main-content');
+            
+            if (mobileToggle && sidebar) {
+                mobileToggle.addEventListener('click', function() {
+                    sidebar.classList.toggle('active');
+                });
+                
+                // Close menu when clicking on a link
+                const navLinks = sidebar.querySelectorAll('a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        sidebar.classList.remove('active');
+                    });
+                });
+                
+                // Close menu when clicking outside
+                mainContent.addEventListener('click', function() {
+                    sidebar.classList.remove('active');
+                });
+            }
+            
+            // Update copyright year
+            const currentYear = new Date().getFullYear();
+            const yearElement = document.getElementById('current-year');
+            if (yearElement) {
+                yearElement.textContent = currentYear;
+            }
+        });
     </script>
 </body>
 </html>

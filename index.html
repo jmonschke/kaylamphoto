@@ -1,295 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Roboto+Slab:100,400,700' rel='stylesheet' type='text/css'>
-        <style>
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    box-sizing: border-box;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-    font-family: Roboto, helvetica, arial, sans-serif, sans;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-header {
-    height: 76px;
-    width: 100%;
-    border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc;
-    background: #fff;
-    text-transform: uppercase;
-    padding: 27px;
-    font-weight: 100;
-}
-
-nav a:hover,
-nav a:focus,
-nav a:visited,
-nav a:active,
-nav a {
-    color: #626262;
-    text-decoration: none;
-    padding: 3px 15px;
-    display: inline-block;
-}
-
-nav {
-    float: right;
-}
-
-.logo {
-    font-size: 22px;
-    float: left;
-}
-
-@media (max-width: 992px) {
-    nav,
-    header ˚∫.logo {
-        float: none;
-    }
-
-    nav {
-        padding: 15px 0;
-    }
-
-    header {
-        height: 105px;
-    }
-}
-
-@media (max-width: 610px) {
-    header {
-        height: 125px;
-    }
-
-}
-
-@media (max-width: 407px) {
-    header {
-        height: 155px;
-    }
-
-}
-
-.logo a {
-    text-decoration: none;
-    color: #000;
-}
-
-.hero {
-    background-image: url(./images/home.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 760px;
-    text-align: center;
-    padding: 375px 0;
-    color: #fff;
-    text-transform: uppercase;d
-}
-
-.hero.about-hero {
-    background-image: url(./images/about.jpg);
-}
-
-.hero h1 {
-    font-size: 45px;
-    margin-bottom: 20px;
-    font-weight: 100;
-}
-
-.name {
-    font-weight: 700;
-}
-
-.content {
-    max-width: 980px;
-    width: 100%;
-    background: #fff;
-    margin: auto;
-}
-
-.content .img-responsive {
-    max-width: 100%;
-}
-
-.content .image {
-    width: 75.306122%;
-}
-
-.content .text {
-    font-size: 4vmin;
-    margin: 21% 0;
-    text-align: center;
-    width: 24.693878%;
-}
-
-.content .text a {
-    color: black;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.content section {
-    clear: both;
-}
-
-.content.about {
-    font-size: 16px;
-    padding: 15px;
-    line-height: 2em;
-}
-
-.about ul {
-    margin: 0 30px 30px;
-}
-
-.about li {
-    margin-left: 15px;
-}
-
-.about h2 {
-    font-size: 28px;
-    margin: 30px 0 15px;
-}
-
-.about h3 {
-    margin: 30px 0 15px;
-    font-size: 24px;
-}
-
-.content .left {
-    float: left;
-}
-
-.content .right {
-    float: right;
-}
-
-footer .logo {
-    margin: 45px 0;
-    font-weight: 100;
-    border: solid #DDD;
-    background: #EEE;
-    text-transform: uppercase;
-    border-width: 1px 0;
-    padding: 30px;
-    width: 100%;
-    text-align: center;
-}
-    </style>
-    <title>Kayla Monschke Photography</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional photography services specializing in babies, kids, families, maternity, and senior portraits by Kayla Monschke">
+    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Kayla Monschke Photography | Professional Portrait Photography</title>
 </head>
 <body>
-    <img src="/images/home.jpg" style="display:none;" />
-    <header>
-        <div class="logo"><a href="/"><span class="name">Kayla Monschke</span> Photography</a></div>
-        <nav>
-            <a href="#babies">Babies</a>
-            <a href="#kids">Kids</a>
-            <a href="#families">Families</a>
-            <a href="#maternity">Maternity</a>
-            <a href="#seniors">Seniors</a>
-            <a href="/about">About</a>
-        </nav>
-    </header>
-    <section class="hero">
-        <h1><span class="name">Kayla Monschke</span> Photography</h1>
-        <p>Babies | Kids | Families | Maternity | Seniors</p>
-    </section>
-    <section class="content">
-        <section class="babies">
-            <a name="babies"></a>
-            <div class="right image">
-                <img class="img-responsive" src="images/babies.jpg" />
-            </div>
-            <div class="left text">
-                <a href="#babies">Babies</a>
-            </div>
-        </section>
-        <section class="kids">
-            <a name="kids"></a>
-            <div class="left image">
-                <img class="img-responsive" src="images/kids.jpg" />
-            </div>
-            <div class="right text">
-                <a href="#kids">Kids</a>
-            </div>
-        </section>
-        <section class="families">
-            <a name="families"></a>
-            <div class="right image">
-                <img class="img-responsive" src="images/families.jpg" />
-            </div>
-            <div class="left text">
-                <a href="#families">Families</a>
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-toggle" aria-label="Toggle navigation menu">☰</button>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="logo">
+            <h1><span class="name">Kayla Monschke</span> Photography</h1>
+            <p class="tagline">Capturing Life's Moments</p>
+        </div>
+        
+        <ul class="nav-menu">
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/#portfolio">Portfolio</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/#pricing">Pricing</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+        
+        <div class="contact-info">
+            <p>Let's create something beautiful together</p>
+            <a href="mailto:kayla.monschke@gmail.com">kayla.monschke@gmail.com</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-image" style="background-image: url('./images/home.jpg')"></div>
+            <div class="hero-content">
+                <h1><span class="name">Kayla Monschke</span> Photography</h1>
+                <p>Professional Portrait Photography</p>
+                <a href="#portfolio" class="hero-cta">View My Work</a>
             </div>
         </section>
-        <section class="maternity">
-            <a name="maternity"></a>
-            <div class="left image">
-                <img class="img-responsive" src="images/maternity.jpg" />
-            </div>
-            <div class="right text">
-                <a href="#maternity">Maternity</a>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <h2 style="font-size: 3rem; font-weight: 300; text-align: center; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 2px;">Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="babies">
+                    <img src="images/babies.jpg" alt="Baby photography by Kayla Monschke" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Babies</h3>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="kids">
+                    <img src="images/kids.jpg" alt="Kids photography by Kayla Monschke" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Kids</h3>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="families">
+                    <img src="images/families.jpg" alt="Family photography by Kayla Monschke" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Families</h3>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="maternity">
+                    <img src="images/maternity.jpg" alt="Maternity photography by Kayla Monschke" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Maternity</h3>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="seniors">
+                    <img src="images/seniors.jpg" alt="Senior portrait photography by Kayla Monschke" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Seniors</h3>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="seniors">
-            <a name="seniors"></a>
-            <div class="right image">
-                <img class="img-responsive" src="images/seniors.jpg" />
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="about-content">
+                <h2>About Kayla</h2>
+                <p>Kayla discovered her love of photography in the darkroom of her Film Photography class in college. Times have changed, but her love of photography stays the same.</p>
+                <p>Specializing in capturing life's most precious moments, Kayla brings a unique artistic vision to every session. From the first breath of a newborn to the proud smile of a graduating senior, every moment tells a story worth preserving.</p>
+                <p>To book a session, contact Kayla by email at <a href="mailto:kayla.monschke@gmail.com">kayla.monschke@gmail.com</a>.</p>
             </div>
-            <div class="left text">
-                <a href="#seniors">Seniors</a>
+            <div class="about-image" style="background-image: url('./images/about.jpg')"></div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing">
+            <h2>Session Packages</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Portrait Session</h3>
+                    <div class="price">$150</div>
+                    <ul>
+                        <li>1-2 hour photography session</li>
+                        <li>High-resolution digital images via download</li>
+                        <li>Online gallery for sharing and viewing</li>
+                        <li>Print release included</li>
+                        <li>Professional editing and retouching</li>
+                    </ul>
+                </div>
             </div>
         </section>
-    </section>
-    <footer>
-        <div class="logo">&copy; 2017 <span class="name">Kayla Monschke</span> Photography</div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; <span id="current-year">2024</span> <span class="name">Kayla Monschke</span> Photography. All rights reserved.</p>
     </footer>
-    <!-- Google tag (gtag.js) -->
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRFZE3DXB0"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-YRFZE3DXB0');
+    </script>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const sidebar = document.querySelector('.sidebar');
+            const mainContent = document.querySelector('.main-content');
+            
+            if (mobileToggle && sidebar) {
+                mobileToggle.addEventListener('click', function() {
+                    sidebar.classList.toggle('active');
+                });
+                
+                // Close menu when clicking on a link
+                const navLinks = sidebar.querySelectorAll('a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        sidebar.classList.remove('active');
+                    });
+                });
+                
+                // Close menu when clicking outside
+                mainContent.addEventListener('click', function() {
+                    sidebar.classList.remove('active');
+                });
+            }
+            
+            // Smooth scrolling for anchor links
+            const anchorLinks = document.querySelectorAll('a[href^="#"]');
+            anchorLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Update copyright year
+            const currentYear = new Date().getFullYear();
+            const yearElement = document.getElementById('current-year');
+            if (yearElement) {
+                yearElement.textContent = currentYear;
+            }
+        });
     </script>
 </body>
 </html>
