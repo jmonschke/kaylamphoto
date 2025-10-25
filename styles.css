@@ -961,13 +961,71 @@ p, h1, h2, h3, h4, h5, h6, span, div, a {
     
     .portfolio h2,
     .about h2,
-    .pricing h2 {
+    .pricing h2,
+    .contact h2 {
         font-size: 1.8rem;
     }
     
     .about p {
         font-size: 0.9rem;
     }
+    
+    .contact-content p {
+        font-size: 1rem;
+    }
+    
+    .contact-email a {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    text-align: center;
+    background: #1a1a1a;
+}
+
+.contact h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.contact-content p {
+    font-size: 1.1rem;
+    color: #cccccc;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.contact-email {
+    margin-top: 2rem;
+}
+
+.contact-email a {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.contact-email a:hover {
+    background: #ffffff;
+    color: #1a1a1a;
+    transform: translateY(-2px);
 }
 
 /* Animations */
